@@ -1,0 +1,18 @@
+
+<div class='row mt-4'>
+  {{#each blogdata}}
+    <div>
+      <div class='card text-center'>
+        
+        <div class='card-body'>
+          <h5 class='card-title'>{{this.title}}</h5>
+          <p class='card-text'>{{this.contents}}.</p>
+           <a href='/blogposts/{{this.id}}' class='btn btn-primary'>View Blog</a>
+        </div>
+        <div class='card-footer'>
+          <p class='card-text'>Created By <strong>{{this.user.username}}</strong> on {{date_formatter this.date_created}}</p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
