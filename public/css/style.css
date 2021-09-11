@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.card {
+    background-color: rgb(32, 31, 31);
+    color: white; 
+    font-family: monospace;
+}
+
+.navbar-brand  {
+    color: white;
+    font-family: monospace; 
+}
+
+.custom-nav .navbar-brand, 
+.custom-nav .navbar-text {
+
+    color: white;
+    font-size: 30px;
+    
+}
+
+.card-title {
+    font-size: 15px;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.btn {
+    font-size: 10px; 
+    background-color: black;
+}
+
+.form-control {
+    height: 200px; 
+}
+
+h1 {
+    color: white; 
+}
+
+.form-floating {
+    background-color: grey;
+}

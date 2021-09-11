@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Blogpost, User } = require('../models');
+const { Blogpost, User, Comments } = require('../models');
 const withAuth = require('../utils/auth');
 
 
@@ -12,7 +12,8 @@ router.get('/', async (req, res) => {
           attributes: ['username'],
         },
       ],
-    });
+    
+   });
     const allblogposts = blogdata.map((blogpost) =>
       blogpost.get({ plain: true })
     );
@@ -28,14 +29,18 @@ router.get('/blogposts/:id', async (req, res) => {
     include: [
       {
         model: User,
-        attributes: ['username'],
+        attributes: ['username']
       },
+      {
+        model: Comments
+      }
     ],
   });
 
   const oneBlogpost = blogdata.get({ plain: true });
+  console.log(oneBlogpost);
 
-  res.render('dashboard', oneBlogpost);
+  res.render('blogpost', oneBlogpost);
 });
 
 router.get('/login', async (req, res) => {
@@ -59,10 +64,30 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
     console.log(blogpostByUser);
 
-    res.render('dashboard', { blogposts: blogpostByUser.blogposts });
+    res.render('dashboard', { blogpost: blogpostByUser.blog_posts });
   } catch (err) {
     console.log(err);
     res.status(500).json(e); 
+  }
+});
+
+router.get('/comments', async (req, res) => {
+  try {
+    const commentdata = await Comments.findAll({
+      include: [
+        {
+          model: Blogpost,
+          attributes: ['title', 'contents', 'date_created'],
+        },
+      ],
+    });
+    const allcomments = commentdata.map((commentpost) =>
+      commentpost.get({ plain: true })
+    );
+
+    res.render('homepage', { commentdata: allcomments });
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 

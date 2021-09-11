@@ -25,7 +25,7 @@ e.preventDefault();
     });
 
     if (signupPost.ok) {
-        document.location.hfef = '/dashboard';
+        document.location.href = '/dashboard';
     }
 });
 
