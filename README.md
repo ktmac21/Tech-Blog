@@ -25,7 +25,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 9. Express-session
 10. Connect-session
 
-# APPLICATION LINK
+# APPLICATION LINK:
 
 https://fast-plateau-75151.herokuapp.com/
 
