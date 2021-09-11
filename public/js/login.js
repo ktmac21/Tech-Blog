@@ -49,6 +49,6 @@ signInForm. addEventListener('submit', async (e) => {
     });
 
     if (loginPost.ok) {
-        document.location.replace = '/dashboard';
+        document.location.replace('/dashboard');
     }
 });
