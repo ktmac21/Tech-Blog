@@ -14,7 +14,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 # TECH USED:
 
-1. Bcyrpt
+1. Bcrypt
 2. MySQL2
 3. Dotenv
 4. Sequelize
