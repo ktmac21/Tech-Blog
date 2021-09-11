@@ -8,9 +8,9 @@ AS A developer who writes about tech
 I WANT a CMS-style blog site   
 SO THAT I can publish articles, blog posts, and my thoughts and opinions   
 
-![](assets/techblog.png)
+![](assets/Techblog.png)
 
-![](assets/techblog2.png)
+![](assets/Techblog2.png)
 
 
 
