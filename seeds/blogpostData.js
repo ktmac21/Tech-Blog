@@ -2,15 +2,15 @@ const { Blogpost } = require('../models');
 
 const blogpostData = [
     {
-        title: 'This is a title',
-        contents: "This is a blog post",
+        title: 'Homework Assignment',
+        contents: "I think I am just about done with this homework!",
         user_id: 1
         
     },
     {
-        title: 'This is another title',
-        contents: 'This is another blog post',
-        user_id: 2
+        title: 'Fixed bugs!',
+        contents: 'After hours upon hours, I have fixed my blog bugs',
+        user_id: 1
     
     }
 ]

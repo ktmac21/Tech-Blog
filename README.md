@@ -12,6 +12,25 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ![](assets/Techblog2.png)
 
+# TECH USED:
+
+1. Bcyrpt
+2. MySQL2
+3. Dotenv
+4. Sequelize
+5. JavaScript
+6. Node.js
+7. Express.js
+8. Handlebars
+9. Express-session
+10. Connect-session
+
+# APPLICATION LINK
+
+https://fast-plateau-75151.herokuapp.com/
+
+
+
 
 
 

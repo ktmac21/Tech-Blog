@@ -49,12 +49,10 @@ router.post('/login', async (req, res) => {
     if (req.session.logged_in) {
       
       req.session.destroy(() => {
-        res.redirect('/');
+        res.redirect('/login');
         res.status(204).end();
       });
-
-    } else if (!req.session.logged_in) {
-      res.redirect('/');
+    
     } else {
       res.redirect('/');
       res.status(404).end();
